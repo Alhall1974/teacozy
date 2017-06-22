@@ -14,7 +14,8 @@ body {
   width: 100%;
   align-items: center;
   position: fixed;
-  z-index: 5;
+  z-index: 1;
+  background-color: black;
 }
 
 nav {
@@ -46,7 +47,6 @@ a {
 
 .large-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
@@ -65,9 +65,9 @@ h4 {
   display: block;
   justify-content: center;
   padding: 10px 10px;
-  flex-wrap: wrap;
-
+  text-align: center;
 }
+
 #mission {
   justify-content: center;
   margin-top: 70px;
@@ -77,6 +77,7 @@ h4 {
 
 .big-img {
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   background-image: url('../images/img-mission-background.jpg');
@@ -86,29 +87,90 @@ h4 {
 
 #featured {
   padding-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .tea-grid-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   align-content: center;
+  padding-bottom: 15px;
 }
 
 .tea-grid {
   display: flex;
-  width: 1000px;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .tea-img {
   display: flex;
   width: 300px;
   height: 200px;
-  margin-bottom: 10px;
-  justify-content: space-between;
-  align-content: center;
+  padding-bottom: 10px;
+  padding-right: 25px;
+}
+
+.footer-container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  flex-flow: row;
+
+}
+
+#locations {
+  background-image: url('../images/img-locations-background.jpg');
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  background-size: cover;
+
+}
+
+.addresses {
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  margin-right: 40px;
+  margin-top: 15px;
+  opacity: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+
+#locations h2 {
+  background-color: transparent;
+}
+
+.addresses p{
+  padding: 5px;
+}
+
+.footer {
+  height: 200px;
+  padding-top: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.copyright {
+  padding-left: 20px;
 }
